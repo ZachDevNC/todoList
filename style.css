@@ -32,14 +32,14 @@ form button {
 }
 
 form button {
-  color: #d88771;
+  color: #ff6f47;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 form button:hover {
-  background: #d88771;
+  background: #ff6f47;
   color: white;
 }
 
