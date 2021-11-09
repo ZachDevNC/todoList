@@ -40,6 +40,16 @@ function deleteCheck(e) {
     //Delete Todo
     if(item.classList[0] === 'trash-btn'){
         const todo = item.parentElement;
-        todo.remove();
+        //Animation - put the remove functionality within an internal function to the animation happens then the item disappears 
+        todo.classList.add('fall');
+        todo.addEventListener('transitionend', function(){
+            todo.remove();
+        });
+    }
+
+    //Check Mark
+    if(item.classList[0] === 'complete-btn'){
+        const todo = item.parentElement;
+        todo.classList.toggle("completed");
     }
 }
