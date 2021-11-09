@@ -86,3 +86,8 @@ form button:hover {
   display: flex; 
   align-items: center;
 }
+
+/* Help with not clicking on the icon since it's inside of the button to make sure button triggers */
+.fa-trash, .fa-check {
+    pointer-events: none;
+}
